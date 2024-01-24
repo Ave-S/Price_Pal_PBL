@@ -1,0 +1,1 @@
+app_id = 'AvijithB-PricePal-PRD-41e2bb563-27ab0807'
