@@ -4,13 +4,13 @@
 # In[14]:
 
 
-pip install selenium
+# pip install selenium
 
 
 # In[15]:
 
 
-pip install webdriver-manager
+# pip install webdriver-manager
 
 
 # In[3]:
@@ -19,7 +19,7 @@ pip install webdriver-manager
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
+# from webdriver.manager.chrome import ChromeDriverManager
 import time
 import random
 
@@ -31,8 +31,8 @@ website_url = 'https://www.amazon.in/Huion-Inspiroy-Graphics-Battery-Free-Sensit
 # For Firefox, download geckodriver: https://github.com/mozilla/geckodriver/releases
    # Change this to the path where your driver is located
 service = Service(executable_path='./chromedriver.exe')
-options = webdriver.ChromeOptions()
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+options = webdriver.FirefoxOptions()
+driver = webdriver.Firefox()
 
 # Open the website
 driver.get(website_url)
